@@ -1,0 +1,1048 @@
+/* Header postion */
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+body {
+    overflow-y: auto; /* Allow vertical scrolling */
+}
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    max-height: 80px;
+    min-width: none;
+    height: 100%;
+    /* justify-content: center; */
+    /* align-items: center; */
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    box-sizing: border-box;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 2.6em;
+}
+
+.hamberg {
+    flex: 1;
+}
+
+
+.header-1 {
+    flex: 1;
+}
+
+.header-3 {
+    flex: 1;
+}
+
+.header-4 {
+    flex: 1;
+}
+
+.header-2 img {
+    max-width: 150px;
+    min-width: 50px;
+    width: 100%;
+    padding: 20px;
+}
+
+nav ul {
+    margin-bottom: 0;
+
+    padding: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: "-apple-system", BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu;
+    font-size: 1rem;
+    color: rgb(65, 65, 65);
+    transition: .8s;
+}
+
+#btn-click {
+    width: 60px;
+    height: 32px;
+    border-radius: 50px;
+    border: 1px solid rgba(90, 90, 90, 0.37);
+    color: #313233;
+    font-family: "-apple-system", BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu;
+    background-color: white;
+    font-size: .8rem;
+}
+
+#textDisplay {
+    position: absolute;
+    top: 48px;
+    right: -20px;
+    width: 180px;
+    height: 115px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px -6px #0202025c;
+    display: none;
+}
+
+.btn-grp {
+    display: inline-block;
+    position: relative;
+
+
+}
+
+#textDisplay ul li {
+ 
+    margin-bottom: 20px;
+    margin-left: 10px;
+    font-size: .9rem;
+    color: rgba(0, 0, 0, 0.747);
+    font-family: "-apple-system", BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu;
+
+}
+
+#textDisplay ul li img {
+    width: 20px;
+    margin-left: 48px;
+
+}
+
+.inverted-Triangle {
+    font-size: 0.625rem;
+    color: #3132334b;
+    margin-left: 4px;
+}
+
+.homeSpan {
+    color: rgb(15, 136, 184);
+    font-size: 1.125rem;
+    margin-right: 3px;
+}
+
+.hamburger {
+    display: none;
+}
+
+.rap {
+    display: none;
+}
+
+.headerOfSlidermanu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerSlider-2 img {
+    max-width: 150px;
+    min-width: 50px;
+    width: 100%;
+    padding: 20px;
+}
+
+.headerSlider-2 {
+    flex: 1;
+}
+
+#closerIcon {
+    flex: 1;
+    text-align: right;
+
+}
+
+#closerIcon Button {
+    width: 45px;
+    height: 35px;
+    font-size: 1.7rem;
+    border: none;
+    background: none;
+    color: #31323396;
+    padding-right: 50px;
+}
+
+.sliderMenuItems {
+    width: 100%;
+    height: 560px;
+    background-color: white;
+}
+
+.sliderMenuItems ul {
+    padding-left: 0;
+}
+
+.sliderMenuItems ul li {
+    padding: 20px 0 20px 15px;
+
+    list-style-type: none;
+    font-size: 1.3rem;
+    font-family: "-apple-system", BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu;
+
+}
+
+.sliderMenuItems ul li a {
+    text-decoration: none;
+    color: #313233;
+}
+
+.sliderMenuItems ul li:hover {
+    background-color: rgba(114, 192, 223, 0.363);
+}
+
+.menuFooter {
+    width: 100%;
+    height: 100px;
+    border-top: 1px solid #b3b3b3b6;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    padding-right: 30px;
+
+}
+
+.rightFooter {
+    flex: 1;
+    text-align: end;
+}
+
+.footerText1 {
+
+    padding-left: 20px;
+    font-size: 1rem;
+    font-family: "-apple-system", BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu;
+    color: #353535;
+    margin-bottom: 0;
+
+}
+
+.footerText2 {
+    padding-left: 20px;
+    font-size: .85rem;
+    color: #313233bd;
+    font-family: "-apple-system", BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu;
+    margin-bottom: 0;
+
+}
+
+.rightFooter p {
+    padding: 10px;
+    font-size: 1.7rem;
+    color: #31323363;
+    margin-bottom: 0;
+    padding-right: 0;
+}
+
+.rap {
+    display: none;
+}
+
+@media only screen and (max-width:920px) {
+    nav {
+        display: none;
+    }
+
+    .hamburger {
+        flex: 1;
+        text-align: right;
+        display: block;
+    }
+
+    .header-1 {
+        display: none;
+    }
+
+    .header-3 {
+        display: none;
+    }
+
+    .header-2 {
+        flex: 1;
+    }
+
+    .header-4 {
+        display: none;
+    }
+
+    .hamburgerButton {
+        padding: 15px;
+        margin-right: 15px;
+        width: 45px;
+        height: 100%;
+        font-size: 1.7rem;
+        border: none;
+        background: none;
+        color: #31323396;
+    }
+
+    #sliderMenu {
+        display: block;
+        width: 0;
+        overflow: hidden;
+        height: 100%;
+        background-color: #ffffff;
+        position: fixed;
+        z-index: 100;
+        top: 0;
+    }
+
+    .rap {
+        display: block;
+        position: relative;
+    }
+}
+
+@media only screen and (min-width:920px) {
+    #sliderMenu {
+        display: none;
+    }
+}
+
+/* First section */
+
+.image img {
+    width: 100%;
+    max-width: 431px;
+    min-width: 200px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    padding-top: 170px;
+    padding-bottom: 95px;
+}
+
+.leftSection {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.leftSectionBox {
+    max-width: 431px;
+    min-width: 200px;
+    width: 100%;
+}
+
+.rightSection {
+    flex: 1;
+}
+
+.section1Text {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, C;
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 0;
+}
+
+.section2Text {
+    font-family: "-apple-system", BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu;
+    margin-top: 0;
+    font-size: 1rem;
+    margin-bottom: 3px;
+}
+
+.section3Text {
+    font-family: "-apple-system", BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu;
+    font-size: .8rem;
+    color: #313233b9;
+}
+
+.downloadLinks ul li {
+    list-style-type: none;
+    padding-bottom: 10px;
+    text-align: start;
+}
+
+.downloadLinks ul li a {
+    text-decoration: none;
+    font-size: .9rem;
+}
+
+.fa {
+    padding-right: 20px;
+}
+
+.monitorIcon {
+    padding-right: 15px;
+}
+
+.desktopView {
+    padding-left: 0;
+}
+
+.mobileView li button {
+    max-width: 260px;
+    min-width: 100px;
+    width: 100%;
+    height: 46px;
+    border-radius: 50px;
+    border: none;
+    background-color: #007EE5;
+    transition: .15s;
+}
+.mobileView li button:hover{
+    background-color: #003c6d;
+    transition: .8s;
+}
+
+
+.mobileView li button a {
+    color: white;
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+.mobileView li button a span {
+    font-size: 1.2rem;
+}
+
+.mobileView {
+    display: inline-block;
+    padding: 0;
+    max-width: 260px;
+    width: 100%;
+    min-width: 200px;
+    display: none;
+}
+
+@media only screen and (max-width:1200px) {
+    .section1Text {
+        font-size: 2.3rem;
+    }
+
+    .section2Text {
+        font-size: .8rem;
+    }
+
+    .section3Text {
+        font-size: .6rem;
+    }
+
+    .downloadLinks ul li {
+        font-size: .8rem;
+    }
+
+    .image img {
+        width: 354px;
+    }
+
+    .leftSectionBox {
+        width: 350px;
+    }
+}
+
+@media only screen and (max-width:920px) {
+    .section1Text {
+        font-size: 2rem;
+    }
+
+    .downloadLinks ul li {
+        font-size: .6rem;
+        transition: .8s;
+    }
+
+    .image img {
+        width: 250px;
+    }
+
+    .leftSectionBox {
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width:580px) {
+
+    .row {
+        flex-direction: column-reverse;
+
+    }
+
+    .leftSection {
+        flex: 1;
+        justify-content: center;
+    }
+
+    .rightSection {
+        flex: 1;
+        justify-content: center;
+    }
+
+    .leftSectionBox {
+        text-align: center;
+        max-width: 680px;
+        min-width: 200px;
+        width: 100%;
+        padding: 20px 60px 20px 60px;
+        box-sizing: border-box;
+    }
+
+    .desktopView {
+        display: none;
+    }
+
+    .image {
+        display: inline-block;
+        max-width: 720px;
+        min-width: 200px;
+        width: 100%;
+        padding: 20px 20px;
+    }
+
+    .rightSection {
+        text-align: center;
+    }
+
+    .image img {
+        max-width: 400px;
+        min-width: 200px;
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    .row {
+        padding-top: 0;
+    }
+
+    .section1Text {
+        font-size: 1.7rem;
+    }
+
+    .section2Text {
+        font-size: 1rem;
+    }
+
+    .section3Text {
+        font-size: .8rem;
+    }
+
+    .mobileView {
+        display: block;
+    }
+
+    .downloadLinks {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* Section 2 */
+
+@media only screen and (max-width:580px) {
+
+
+    .sectionrow {
+        display: flex;
+        overflow: scroll;
+        flex-direction: row;
+        column-gap: 30px;
+        background-color: rgb(255, 245, 245);
+        padding-top: 50px;
+        animation: scroll-horizontal 20s linear infinite;
+    }
+
+
+    .sectionrow::-webkit-scrollbar {
+        display: none;
+    }
+
+    .section-info {
+        display: flex;
+    }
+
+    .figure1 img {
+        width: 480px;
+        height: 820px;
+
+    }
+
+    .figure2 img {
+        width: 480px;
+        height: 820px;
+
+    }
+
+    .figer3Bg {
+        width: 480px;
+        height: 820px;
+        background-color: rgb(230, 95, 66);
+        background-image: url(image/features-offer.png);
+        background-size: 60%;
+        background-position: 50% 20%;
+        background-repeat: no-repeat;
+        border-radius: 20px;
+        text-align: center;
+        position: relative;
+    }
+
+    .row {
+        padding-bottom: 25px;
+    }
+
+    .buttenExplore button {
+        width: 355px;
+        height: 50px;
+        color: #007EE5;
+        border: 1px solid #007ee5;
+        border-radius: 50px;
+        font-size: 1rem;
+
+        background: none;
+    }
+
+    .rightArrow svg path {
+        fill: #007EE5;
+    }
+
+    .rightArrow {
+        display: inline-block;
+        padding-left: 10px;
+    }
+
+    .section-explore {
+        display: flex;
+        justify-content: center;
+        padding: 30px 0 30px 0;
+    }
+    .pText1{
+        font-size: 2.5rem;
+        font-weight: 900;
+        color: white;
+        margin-bottom: 0;
+    }
+    .pText2{
+        font-size: 1rem;
+        color: white;
+    }
+    
+    .pText3{
+        font-size: 1rem;
+        font-weight: 400;
+        color: white;
+    }
+    .groupedText1 {
+        position: absolute;
+        text-align: center;
+        top:50%;
+        padding: 0 30px 0 30px;
+    }
+    .figure1 {
+        position: relative;
+    }
+    .pymentText{
+        font-size: 2.6rem;
+        font-weight: 900;
+        color: white;
+    }
+    .groupText2 {
+        position: absolute;
+        text-align: center;
+        top:5%;
+        padding: 0 30px 0 30px;
+    }
+    .figure2 {
+        position: relative;
+    }
+    .pymentText img {
+        width: 30px;
+        height: 30px;
+        border-radius: 0;
+    
+    }
+    .compainedptages{
+        position: absolute;
+        top: 60%;
+        padding: 0 30px 0 30px;
+        text-align: center;
+    }
+    .offer{
+        font-size: 2.6rem;
+         font-weight: 900;
+         color :rgb(255, 245, 159) ;
+      }
+      .offerdDetails{
+        font-size: 1.3rem;
+        color :rgb(255, 245, 159) ;
+    }
+    
+
+}
+
+@media only screen and (min-width:1200px){
+    
+
+
+.secondSection {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 245, 245);
+    padding-top: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionrow {
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+}
+
+.figure1 img {
+    width: 360px;
+    height: 640px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.figure2 img {
+    width: 360px;
+    height: 640px;
+    border-radius: 20px;
+    position: relative;
+}
+
+
+.figer3Bg {
+    width: 360px;
+    height: 640px;
+    background-color: rgb(230, 95, 66);
+    background-image: url(image/features-offer.png);
+    background-size: 60%;
+    background-position: 50% 20%;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.buttenExplore button {
+    width: 355px;
+    height: 75px;
+    color: #007EE5;
+    border: 1px solid #007EE5;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 500;
+    background: none;
+}
+
+.rightArrow svg path {
+    fill: #007EE5;
+}
+
+.buttenExplore {
+    padding: 90px 90px;
+}
+
+.figure2 {
+    position: relative;
+}
+
+.groupText2 {
+    position: absolute;
+    top: 0;
+}
+
+.figure1 {
+    position: relative;
+}
+
+.groupedText1 {
+    position: absolute;
+    top: 0;
+}
+
+.pymentText img {
+    width: 40px;
+    height: 40px;
+    border-radius: 0;
+
+}
+.section-explore{
+    display: flex;
+    justify-content: center;
+}
+.compainedptages{
+    position: absolute;
+    top: 60%;
+    padding: 0 25px 0 25px;
+    text-align: center;
+}
+.offer{
+    font-size: 2rem;
+    font-weight: 900;
+    color:rgb(255, 245, 159) ;
+}
+.offerdDetails{
+    color: rgb(255, 245, 159);
+    font-size: .9rem;
+}
+.pymentText{
+    color: white;
+    font-weight: 900;
+    font-size: 2rem;
+}
+.pText2{
+    font-size: .9rem;
+    color: white;
+}
+.groupText2{
+    text-align: center;
+    top: 5%;
+    padding: 0 25px 0 25px;
+}
+.groupedText1{
+    text-align: center;
+    top:57%;
+    padding: 0 25px 0 25px;
+}
+.pText1{
+    font-size: 2rem;
+    font-weight: 900;
+    color: white;
+    margin-bottom: 0;
+}
+.pText2{
+    font-size: .9rem;
+    color: white;
+}
+.pText3{
+    font-size: .9rem;
+     font-weight: 400;
+    color: white;
+}
+.rightArrow{
+    display: inline-block;
+    padding-left: 10px;
+}
+}
+
+@media (min-width:580px) and (max-width:1200px){
+ 
+    .secondSection {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(255, 245, 245);
+        padding-top: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+    .sectionrow {
+        display: flex;
+        flex-direction: row;
+        column-gap: 10px;
+    }
+    
+
+    .figure1 img {
+        width: 220px;
+        height: 385px;
+        border-radius: 20px;
+        position: relative;
+    }
+    .figure2 img {
+        width: 220px;
+        height: 385px;
+        border-radius: 20px;
+        position: relative;
+    }
+    .figer3Bg {
+        width: 220px;
+        height: 385px;
+        background-color: rgb(230, 95, 66);
+        background-image: url(image/features-offer.png);
+        background-size: 40%;
+        background-position: 50% 15%;
+        background-repeat: no-repeat;
+        border-radius: 20px;
+        text-align: center;
+        position: relative;
+    }
+    .buttenExplore button {
+        width: 355px;
+        height: 75px;
+        color: #007EE5;
+        border: 1px solid #007EE5;
+        border-radius: 50px;
+        font-size: 1rem;
+        font-weight: 500;
+        background: none;
+        transition: .8s;
+    }
+    .rightArrow svg path {
+        fill: #007EE5;
+    }
+    
+    .buttenExplore {
+        padding: 90px 90px;
+    }
+    
+    .figure2 {
+        position: relative;
+    }
+    
+    .groupText2 {
+        position: absolute;
+        top: 0;
+    }
+    
+    .figure1 {
+        position: relative;
+    }
+    
+    .groupedText1 {
+        position: absolute;
+        text-align: center;
+        top:25%;
+        padding: 0 10px 0 10px;
+    }
+    .pymentText img {
+        width: 30px;
+        height: 30px;
+        border-radius: 0;
+    
+    }
+    .pText1{
+        font-size: 1.8rem;
+        font-weight: 900;
+        color: white;
+        margin-bottom: 0;
+    }
+    .pText2{
+        font-size: .7rem;
+        color: white;
+    }
+    
+    .pText3{
+        font-size: .7rem;
+        font-weight: 400;
+        color: white;
+    }
+    .pymentText{
+        font-size: 1.8rem;
+        font-weight: 900;
+        color: white;
+    }
+    .groupText2{
+        text-align: center;
+        top:5%;
+    padding: 0 10px 0 10px;
+    }
+    .compainedptages{
+        position: absolute;
+        top: 40%;
+        padding: 0 10px 0 10px;
+        text-align: center;
+    }
+    .offerdDetails{
+        font-size: .7rem;
+        color :rgb(255, 245, 159) ;
+    }
+    .offer{
+      font-size: 1.8rem;
+       font-weight: 900;
+       color :rgb(255, 245, 159) ;
+    }
+    .buttenExplore button {
+        width: 300px;
+        height: 50px;
+        color: #007EE5;
+        border: 1px solid #007EE5;
+        border-radius: 50px;
+        font-size: 1rem;
+        font-weight: 500;
+        background: none;
+    }
+    .rightArrow{
+        display: inline-block;
+        padding-left: 10px;
+    }
+    .buttenExplore {
+        padding: 50px 50px;
+    }
+    
+}
+@media only screen and (max-width:580px) {
+ .footermobileView{
+    padding-top: 15%;
+ }
+ .elementsInfooter {
+    padding-top: 20px;
+}
+.footerCopyright{
+    text-align: center;
+}
+
+}
+.elementsInfooter ul li a {
+    text-decoration: none;
+    color: #949494;
+    font-size: .9rem;
+    transition: .8s;
+}
+.elementsInfooter ul li h4{
+    color: white;
+    font-size: .9rem;
+}
+.elementsInfooter ul li{
+    padding-bottom: 10px;
+}
+
+.elementsInfooter ul {
+    list-style-type: none;
+}
+
+.elementsInfooter {
+    text-align: center;
+}
+.Footer1{
+    background-color: #313233;
+}
+.Footer2{
+    background-color: rgb(20, 20, 20);
+}
+.footerCopyright div p{
+    color: rgb(140, 140, 140);
+    font-size: .8rem;
+}
+.footerCopyright{
+   padding:  10px 0 0 6%;
+}
+.footermobileView{
+    padding: 40px 0 0px 0;
+}
+/* hoverings */
+nav ul li  a:hover{
+    color: #007ee5;
+    }
+.buttenExplore button:hover{
+    background-color: #007ee511;
+    transition: .8s;
+}
+.elementsInfooter ul li a:hover{
+    color: #8ccbffce;
+    transition: .8s;
+}
+.desktopView li a:hover{
+    text-decoration: underline;
+    transition: .8s;
+
+}
